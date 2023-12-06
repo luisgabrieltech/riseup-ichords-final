@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <!-- Define o fundo da barra de progresso (opcional) -->
+    <item android:id="@android:id/background">
+        <shape>
+            <corners
+                android:bottomLeftRadius="15dp"
+                android:bottomRightRadius="15dp"
+                />
+            <solid android:color="@color/gray" /> <!-- Cor do fundo -->
+        </shape>
+    </item>
+
+    <!-- Define a barra de progresso preenchida -->
+    <item android:id="@android:id/progress">
+        <clip>
+            <shape>
+                <corners
+                    android:bottomLeftRadius="15dp"
+                    android:bottomRightRadius="15dp"
+                    />
+                <solid android:color="@color/light_blue" /> <!-- Cor da barra de progresso -->
+            </shape>
+        </clip>
+    </item>
+
+</layer-list>

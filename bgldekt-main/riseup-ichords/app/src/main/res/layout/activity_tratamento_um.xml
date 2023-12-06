@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".TratamentoUmActivity">
+
+    <View
+        android:id="@+id/view_caixa_topbar"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_button_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="@id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="@id/view_caixa_topbar"
+        app:layout_constraintTop_toTopOf="@+id/view_caixa_topbar" />
+
+
+    <Button
+        android:id="@+id/button_pular"
+        android:layout_width="54dp"
+        android:layout_height="32dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#42525E"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_caixa_topbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pular"
+        android:elevation="15dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/button_pular"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintStart_toStartOf="@id/button_pular"
+        app:layout_constraintTop_toTopOf="@id/button_pular" />
+
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="347dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="25dp"
+        android:text="Selecione um ou mais estilos musicais que você gostaria de tocar"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_avancar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/vtr_botaotocar_musics"
+        android:text="Avançar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintStart_toStartOf="@id/image_voltar" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@id/button_avancar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_main"
+        app:layout_constraintVertical_bias="1.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view_mpb"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginStart="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_classica"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintStart_toStartOf="@id/view_mpb"
+                app:layout_constraintTop_toBottomOf="@id/view_mpb" />
+
+            <View
+                android:id="@+id/view_sertanejo"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintStart_toStartOf="@id/view_mpb"
+                app:layout_constraintTop_toBottomOf="@id/view_classica" />
+
+            <View
+                android:id="@+id/view_Jazz"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_Rock"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintEnd_toEndOf="@id/view_Jazz"
+                app:layout_constraintTop_toBottomOf="@id/view_Jazz" />
+
+            <View
+                android:id="@+id/view_Pop"
+                android:layout_width="163dp"
+                android:layout_height="163dp"
+                android:layout_marginTop="16dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintEnd_toEndOf="@id/view_Jazz"
+                app:layout_constraintTop_toBottomOf="@id/view_Rock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="MPB"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_mpb"
+                app:layout_constraintStart_toStartOf="@id/view_mpb" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="Clássica"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_classica"
+                app:layout_constraintStart_toStartOf="@id/view_classica" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="Sertanejo"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_sertanejo"
+                app:layout_constraintStart_toStartOf="@id/view_sertanejo" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="Jazz"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_Jazz"
+                app:layout_constraintStart_toStartOf="@id/view_Jazz" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="Rock"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_Rock"
+                app:layout_constraintStart_toStartOf="@id/view_Rock" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="19dp"
+                android:layout_marginBottom="19dp"
+                android:text="Pop"
+                android:textColor="@color/white"
+                android:textSize="22sp"
+                app:layout_constraintBottom_toBottomOf="@id/view_Pop"
+                app:layout_constraintStart_toStartOf="@id/view_Pop" />
+
+            <ImageView
+                android:id="@+id/image_check_mpb"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_mpb"
+                app:layout_constraintBottom_toBottomOf="@id/view_mpb"/>
+
+            <ImageView
+                android:id="@+id/image_check_jazz"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_Jazz"
+                app:layout_constraintBottom_toBottomOf="@id/view_Jazz"/>
+
+            <ImageView
+                android:id="@+id/image_check_classica"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_classica"
+                app:layout_constraintBottom_toBottomOf="@id/view_classica"/>
+
+            <ImageView
+                android:id="@+id/image_check_rock"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_Rock"
+                app:layout_constraintBottom_toBottomOf="@id/view_Rock"/>
+
+            <ImageView
+                android:id="@+id/image_check_sertanejo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:visibility="invisible"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_sertanejo"
+                app:layout_constraintBottom_toBottomOf="@id/view_sertanejo"/>
+
+            <ImageView
+                android:id="@+id/image_check_pop"
+                android:layout_width="wrap_content"
+                android:visibility="invisible"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_check_confirmation_tratamento"
+                app:layout_constraintEnd_toEndOf="@id/view_Pop"
+                app:layout_constraintBottom_toBottomOf="@id/view_Pop"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

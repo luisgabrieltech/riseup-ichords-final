@@ -1,0 +1,597 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MaisFragment"
+    android:background="@color/dark_blue">
+
+    <View
+        android:id="@+id/Mais_topBar"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="@drawable/bg_topbar"
+        />
+
+    <ImageView
+        android:layout_width="132dp"
+        android:layout_height="30dp"
+        app:layout_constraintTop_toTopOf="@id/Mais_topBar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="@id/Mais_topBar"
+        android:layout_marginStart="16dp"
+        android:src="@drawable/img_logo_ichords"/>
+    
+    <ImageButton
+        android:layout_width="29dp"
+        android:layout_height="30dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_engrenhagem_perfil"
+        app:layout_constraintTop_toTopOf="@id/Mais_topBar"
+        app:layout_constraintBottom_toBottomOf="@id/Mais_topBar"
+        app:layout_constraintEnd_toEndOf="@id/Mais_topBar"
+        />
+    
+    <View
+        android:id="@+id/card1_Mais"
+        android:layout_width="347dp"
+        android:layout_height="131dp"
+        android:background="@drawable/vtr_card1_mais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/Mais_topBar"
+        android:layout_marginTop="20dp"/>
+    
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/img_perfil_mais"
+        app:layout_constraintStart_toStartOf="@id/card1_Mais"
+        app:layout_constraintEnd_toEndOf="@id/card1_Mais"
+        app:layout_constraintTop_toTopOf="@id/card1_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card1_Mais"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/txt_nome_Mais"
+        android:layout_width="222dp"
+        android:layout_height="34dp"
+        android:text="SquaadSeis"
+        style="@style/txtTittle_Mais"
+        app:layout_constraintTop_toBottomOf="@id/card1_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="22dp"/>
+    
+    <TextView
+        android:layout_width="123dp"
+        android:layout_height="24dp"
+        android:text="@SquaadSeis"
+        style="@style/txt_arroba_Mais"
+        app:layout_constraintStart_toEndOf="@id/txt_nome_Mais"
+        app:layout_constraintTop_toBottomOf="@id/card1_Mais"
+        android:layout_marginTop="25dp"/>
+    
+    <View
+        android:id="@+id/card2_Mais"
+        android:layout_width="107dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vtr_card2_perfil"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="22dp"/>
+
+    <TextView
+        android:layout_width="75dp"
+        android:layout_height="25dp"
+        android:text="7 amigos"
+        style="@style/txt_card2_mais"
+        app:layout_constraintStart_toStartOf="@id/card2_Mais"
+        app:layout_constraintEnd_toEndOf="@id/card2_Mais"
+        app:layout_constraintTop_toTopOf="@id/card2_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card2_Mais"/>
+    
+    <View
+        android:id="@+id/card3_Mais"
+        android:layout_width="224dp"
+        android:layout_height="50dp"
+        android:background="@drawable/vtr_card3_mais"
+        app:layout_constraintStart_toEndOf="@id/card2_Mais"
+        app:layout_constraintTop_toBottomOf="@id/txt_nome_Mais"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="20dp"/>
+
+    <View
+        android:id="@+id/ic_adicionaramigos_Mais"
+        android:layout_width="21dp"
+        android:layout_height="26.25dp"
+        android:background="@drawable/ic_adicionaramigos_mais"
+        app:layout_constraintStart_toStartOf="@id/card3_Mais"
+        app:layout_constraintTop_toTopOf="@id/card3_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card3_Mais"
+        android:layout_marginStart="22dp"/>
+    
+    <TextView
+        android:layout_width="143dp"
+        android:layout_height="23dp"
+        android:text="Adicionar amigos"
+        style="@style/txt_adicionaramigos_mais"
+        app:layout_constraintStart_toEndOf="@id/ic_adicionaramigos_Mais"
+        app:layout_constraintTop_toTopOf="@id/card3_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card3_Mais"
+        android:layout_marginStart="16dp"/>
+    
+    <TextView
+        android:id="@+id/txtTittle2_Mais"
+        android:layout_width="328dp"
+        android:layout_height="30dp"
+        android:text="Estatísticas"
+        style="@style/txtTittle2_Mais"
+        app:layout_constraintTop_toBottomOf="@id/card2_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="10dp"/>
+    
+    <!-- Card1 Estatistica -->
+    <View
+        android:id="@+id/card1_estatistica_Mais"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:background="@drawable/vtr_estatistica_mais"
+        app:layout_constraintTop_toBottomOf="@id/txtTittle2_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="20dp"/>
+    
+    <View
+        android:layout_width="23dp"
+        android:layout_height="26dp"
+        android:background="@drawable/ic_fogo_mais"
+        app:layout_constraintStart_toStartOf="@id/card1_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card1_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card1_estatistica_Mais"
+        android:layout_marginStart="16dp"/>
+    
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="17dp"
+        android:text="2"
+        android:textStyle="bold"
+        style="@style/card1V_estatistica_Mais"
+        app:layout_constraintStart_toStartOf="@id/card1_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card1_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card1_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginBottom="29dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="18dp"
+        android:text="Dias seguidos"
+        style="@style/card1_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card1_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card1_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card1_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="12dp"/>
+    
+    
+    <!--Card2 Estatistica-->
+
+    <View
+        android:id="@+id/card2_estatistica_Mais"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:background="@drawable/vtr_estatistica_mais"
+        app:layout_constraintTop_toBottomOf="@id/txtTittle2_Mais"
+        app:layout_constraintStart_toEndOf="@id/card1_estatistica_Mais"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="20dp"/>
+    
+    <View
+        android:layout_width="26dp"
+        android:layout_height="26dp"
+        android:background="@drawable/ic_estrela_mais"
+        app:layout_constraintTop_toTopOf="@id/card2_estatistica_Mais"
+        app:layout_constraintStart_toStartOf="@id/card2_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card2_estatistica_Mais"
+        android:layout_marginStart="16dp"/>
+    
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="17dp"
+        android:text="1870"
+        android:textStyle="bold"
+        style="@style/card2V_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card2_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card2_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card2_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="29dp"/>
+    
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="17dp"
+        android:text="Pontos totais"
+        style="@style/card1_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card2_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card2_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card2_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="12dp"/>
+
+    
+    <!--Card3 Estatistica-->
+    
+    <View
+        android:id="@+id/card3_estatistica_Mais"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:background="@drawable/vtr_estatistica_mais"
+        app:layout_constraintTop_toBottomOf="@id/card1_estatistica_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="16dp"/>
+    
+    <View
+        android:layout_width="24dp"
+        android:layout_height="26dp"
+        android:background="@drawable/ic_musica_mais"
+        app:layout_constraintStart_toStartOf="@id/card3_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card3_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card3_estatistica_Mais"
+        android:layout_marginStart="16dp"/>
+    
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="18dp"
+        android:text="Rank"
+        android:textStyle="bold"
+        style="@style/card2V_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card3_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card3_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card3_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="29dp"/>
+
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="18dp"
+        android:text="de musicas"
+        style="@style/card2V_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card3_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card3_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card3_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="12dp"/>
+    
+    
+    <!--Card4 Estatistica-->
+
+    <View
+        android:id="@+id/card4_estatistica_Mais"
+        android:layout_width="165dp"
+        android:layout_height="58dp"
+        android:background="@drawable/vtr_estatistica_mais"
+        app:layout_constraintTop_toBottomOf="@id/card2_estatistica_Mais"
+        app:layout_constraintStart_toEndOf="@id/card1_estatistica_Mais"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="16dp"/>
+    
+    <View
+        android:layout_width="25dp"
+        android:layout_height="26dp"
+        android:background="@drawable/ic_trofeu_mais"
+        app:layout_constraintStart_toStartOf="@id/card4_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card4_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card4_estatistica_Mais"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="17dp"
+        android:text="5"
+        android:textStyle="bold"
+        style="@style/card2V_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card4_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card4_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card4_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="29dp"/>
+
+    <TextView
+        android:layout_width="94dp"
+        android:layout_height="18dp"
+        android:text="Conquistas"
+        style="@style/card1_estatistica_mais"
+        app:layout_constraintStart_toStartOf="@id/card4_estatistica_Mais"
+        app:layout_constraintTop_toTopOf="@id/card4_estatistica_Mais"
+        app:layout_constraintBottom_toBottomOf="@id/card4_estatistica_Mais"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="29dp"
+        android:layout_marginBottom="12dp"/>
+    
+    <TextView
+        android:id="@+id/txtTittle3_Mais"
+        android:layout_width="264dp"
+        android:layout_height="35dp"
+        android:text="Conquistas"
+        style="@style/txtTittle2_Mais"
+        app:layout_constraintTop_toBottomOf="@id/card3_estatistica_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="13dp"/>
+    
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerTudo_MaisConq"
+        android:layout_width="80dp"
+        android:layout_height="20dp"
+        android:background="@drawable/vtr_botaoconquistas_mais"
+        android:text="Ver tudo"
+        android:textAllCaps="false"
+        style="@style/botao_conquistas_mais"
+        app:layout_constraintStart_toEndOf="@id/txtTittle3_Mais"
+        app:layout_constraintTop_toBottomOf="@id/card3_estatistica_Mais"
+        android:layout_marginStart="3dp"
+        android:layout_marginTop="21dp"/>
+
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="15dp"
+        android:scrollbars="none"
+        app:layout_constraintTop_toBottomOf="@id/txtTittle3_Mais"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+            <!-- Card1 Conquistas -->
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card1_conquistas_Mais"
+                android:layout_width="211dp"
+                android:layout_height="93dp"
+                android:orientation="vertical"
+                android:background="@drawable/vtr_cardconquistas_mais"
+                android:layout_marginStart="22dp">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/img_card1conquistas_mais"
+                    app:layout_constraintTop_toTopOf="@id/card1_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card1_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card1_conquistas_Mais"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="28dp"
+                    android:text="Primeiro lugar"
+                    android:textStyle="bold"
+                    style="@style/card1_conquistas_mais"
+                    android:gravity="bottom"
+                    app:layout_constraintTop_toTopOf="@id/card1_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card1_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="12dp"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="36dp"
+                    android:text="Conquistou 1º posição em uma musica ranqueada"
+                    style="@style/card1_conquistasSub_mais"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/card1_conquistas_Mais"
+                    app:layout_constraintTop_toTopOf="@id/card1_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card1_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card2_conquistas_Mais"
+                android:layout_width="211dp"
+                android:layout_height="93dp"
+                android:orientation="vertical"
+                android:background="@drawable/vtr_cardconquistas_mais"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/img_card2conquistas_mais"
+                    app:layout_constraintTop_toTopOf="@id/card2_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card2_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card2_conquistas_Mais"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="40dp"
+                    android:text="Saiu na foto"
+                    android:textStyle="bold"
+                    style="@style/card1_conquistas_mais"
+                    android:gravity="bottom"
+                    app:layout_constraintTop_toTopOf="@id/card2_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card2_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="45dp"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="24dp"
+                    android:text="Primeiro pódio nas musicas rankeadas"
+                    style="@style/card1_conquistasSub_mais"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/card2_conquistas_Mais"
+                    app:layout_constraintTop_toTopOf="@id/card2_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card2_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card3_conquistas_Mais"
+                android:layout_width="211dp"
+                android:layout_height="93dp"
+                android:orientation="vertical"
+                android:background="@drawable/vtr_cardconquistas_mais"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/img_card3_mais"
+                    app:layout_constraintTop_toTopOf="@id/card3_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card3_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card3_conquistas_Mais"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="40dp"
+                    android:text="Incansável"
+                    android:textStyle="bold"
+                    style="@style/card1_conquistas_mais"
+                    android:gravity="bottom"
+                    app:layout_constraintTop_toTopOf="@id/card3_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card3_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="45dp"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="24dp"
+                    android:text="Praticou 10 dias seguidos"
+                    style="@style/card1_conquistasSub_mais"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/card3_conquistas_Mais"
+                    app:layout_constraintTop_toTopOf="@id/card3_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card3_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card4_conquistas_Mais"
+                android:layout_width="211dp"
+                android:layout_height="93dp"
+                android:orientation="vertical"
+                android:background="@drawable/vtr_cardconquistas_mais"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/img_card4_mais"
+                    app:layout_constraintTop_toTopOf="@id/card4_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card4_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card4_conquistas_Mais"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="40dp"
+                    android:text="Sociável"
+                    android:textStyle="bold"
+                    style="@style/card1_conquistas_mais"
+                    android:gravity="bottom"
+                    app:layout_constraintTop_toTopOf="@id/card4_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card4_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="45dp"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="24dp"
+                    android:text="Adicionou 3 amigos"
+                    style="@style/card1_conquistasSub_mais"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/card4_conquistas_Mais"
+                    app:layout_constraintTop_toTopOf="@id/card4_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card4_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/card5_conquistas_Mais"
+                android:layout_width="211dp"
+                android:layout_height="93dp"
+                android:orientation="vertical"
+                android:background="@drawable/vtr_cardconquistas_mais"
+                android:layout_marginStart="16dp">
+
+                <ImageView
+                    android:layout_width="93dp"
+                    android:layout_height="93dp"
+                    android:src="@drawable/img_card5_mais"
+                    app:layout_constraintTop_toTopOf="@id/card5_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card5_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card5_conquistas_Mais"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="40dp"
+                    android:text="Iniciante "
+                    android:textStyle="bold"
+                    style="@style/card1_conquistas_mais"
+                    android:gravity="bottom"
+                    app:layout_constraintTop_toTopOf="@id/card5_conquistas_Mais"
+                    app:layout_constraintStart_toStartOf="@id/card5_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="12dp"
+                    android:layout_marginBottom="45dp"/>
+
+                <TextView
+                    android:layout_width="94dp"
+                    android:layout_height="24dp"
+                    android:text="Conquistou 1000 pontos totais"
+                    style="@style/card1_conquistasSub_mais"
+                    android:textStyle="bold"
+                    app:layout_constraintStart_toStartOf="@id/card5_conquistas_Mais"
+                    app:layout_constraintTop_toTopOf="@id/card5_conquistas_Mais"
+                    app:layout_constraintBottom_toBottomOf="@id/card5_conquistas_Mais"
+                    android:layout_marginStart="105dp"
+                    android:layout_marginTop="57dp"
+                    android:layout_marginBottom="12dp"/>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

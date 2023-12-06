@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/violao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cordas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/violao" />
+
+    <ImageView
+        android:id="@+id/cordas"
+        android:layout_width="829dp"
+        android:layout_height="393dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/cordas" />
+
+    <TextView
+        android:id="@+id/velocidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="26dp"
+        android:layout_marginEnd="32dp"
+        android:text="@string/velocidade"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/caixa_Periodo"
+        android:layout_width="576dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="33dp"
+        android:src="@drawable/caixa_periodo"
+        app:layout_constraintEnd_toStartOf="@+id/velocidade"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/voltar"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/voltar"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="26dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/voltar" />
+
+
+
+    <ImageView
+        android:id="@+id/periodo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="@+id/caixa_Periodo"
+        app:layout_constraintEnd_toEndOf="@+id/caixa_Periodo"
+        app:layout_constraintStart_toStartOf="@+id/caixa_Periodo"
+        app:layout_constraintTop_toTopOf="@+id/caixa_Periodo"
+        app:srcCompat="@drawable/periodo" />
+
+
+
+    <ImageView
+        android:id="@+id/acorde_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="530dp"
+        android:layout_marginEnd="200dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toBottomOf="@+id/cordas"
+        app:layout_constraintEnd_toEndOf="@+id/violao"
+        app:layout_constraintStart_toStartOf="@+id/violao"
+        app:srcCompat="@drawable/acorde_1" />
+
+    <ImageView
+        android:id="@+id/acorde0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginEnd="340dp"
+        android:layout_marginBottom="40dp"
+        app:layout_constraintBottom_toBottomOf="@+id/violao"
+        app:layout_constraintEnd_toEndOf="@+id/violao"
+        app:layout_constraintStart_toStartOf="@+id/violao"
+        app:srcCompat="@drawable/acorde0" />
+
+    <ImageView
+        android:id="@+id/acorde3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="711dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="15dp"
+        app:layout_constraintBottom_toBottomOf="@+id/violao"
+        app:layout_constraintEnd_toEndOf="@+id/violao"
+        app:layout_constraintStart_toStartOf="@+id/violao"
+        app:srcCompat="@drawable/acorde_3" />
+
+    <TextView
+        android:id="@+id/refrao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="400dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="200dp"
+        android:text="Refrão"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/caminho"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="320dp"
+        android:layout_marginBottom="60dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/caminho" />
+
+    <ImageView
+        android:id="@+id/ponteiro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="200dp"
+        android:layout_marginEnd="160dp"
+        android:layout_marginBottom="36dp"
+        app:layout_constraintBottom_toBottomOf="@+id/caminho"
+        app:layout_constraintEnd_toEndOf="@+id/caminho"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/caminho"
+        app:srcCompat="@drawable/ponteiro" />
+
+    <TextView
+        android:id="@+id/acorde_text_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="80dp"
+        android:text="1"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/acorde_1"
+        app:layout_constraintEnd_toEndOf="@+id/acorde_1"
+        app:layout_constraintStart_toStartOf="@+id/acorde_1"
+        app:layout_constraintTop_toTopOf="@+id/acorde_1" />
+
+    <TextView
+        android:id="@+id/acorde_text_0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="30dp"
+        android:text="0"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/acorde0"
+        app:layout_constraintEnd_toEndOf="@+id/acorde0"
+        app:layout_constraintStart_toStartOf="@+id/acorde0"
+        app:layout_constraintTop_toTopOf="@+id/acorde0" />
+
+    <TextView
+        android:id="@+id/acorde_text_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="50dp"
+        android:text="3"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="@+id/acorde3"
+        app:layout_constraintEnd_toEndOf="@+id/acorde3"
+        app:layout_constraintStart_toStartOf="@+id/acorde3"
+        app:layout_constraintTop_toTopOf="@+id/acorde3" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+

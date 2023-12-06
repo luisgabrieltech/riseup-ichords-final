@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/menu_home"
+        android:title="@string/menu_bottom_bar_home"
+        android:icon="@drawable/ic_menu_home_navbar"/>
+
+    <item android:id="@+id/menu_desafios"
+        android:title="@string/menu_bottom_bar_desafios"
+        android:icon="@drawable/ic_menu_desafios_navbar"/>
+
+    <item android:id="@+id/menu_musicas"
+        android:title="@string/menu_bottom_bar_musicas"
+        android:icon="@drawable/ic_menu_musicas_navbar"/>
+
+    <item android:id="@+id/menu_mais"
+        android:title="@string/menu_bottom_bar_mais"
+        android:icon="@drawable/ic_menu_mais_navbar"/>
+</menu>

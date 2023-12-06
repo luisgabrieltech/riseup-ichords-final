@@ -1,0 +1,662 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MusicsActivity">
+
+    <View
+        android:id="@+id/view_caixa_topbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_topbar"/>
+
+    <ImageView
+        android:id="@+id/image_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintTop_toTopOf="@+id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="@id/view_caixa_topbar"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_estrela_musics"
+        app:layout_constraintTop_toTopOf="@id/image_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+    <ImageView
+        android:id="@+id/image_caixa_musica"
+        android:layout_width="347dp"
+        android:layout_height="120dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.515"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar" />
+
+    <ImageView
+        android:id="@+id/image_banda"
+        android:layout_width="116dp"
+        android:src="@drawable/charlie"
+        android:layout_height="120dp"
+        app:layout_constraintStart_toStartOf="@id/image_caixa_musica"
+        app:layout_constraintTop_toTopOf="@id/image_caixa_musica"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="4:38"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        android:layout_marginTop="17dp"
+        android:layout_marginEnd="15dp"
+        app:layout_constraintEnd_toEndOf="@id/image_caixa_musica"
+        app:layout_constraintTop_toTopOf="@id/image_caixa_musica"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Vem Ser Minha"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        app:layout_constraintTop_toTopOf="@id/image_caixa_musica"
+        app:layout_constraintStart_toEndOf="@id/image_banda"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="15dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="La familia 013"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        app:layout_constraintTop_toTopOf="@id/image_caixa_musica"
+        app:layout_constraintStart_toEndOf="@id/image_banda"
+        android:layout_marginTop="48dp"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Charlie Brown Jr"
+        android:textColor="@color/white"
+        android:textSize="15sp"
+        android:layout_marginBottom="17dp"
+        app:layout_constraintBottom_toBottomOf="@id/image_caixa_musica"
+        app:layout_constraintStart_toEndOf="@id/image_banda"
+        android:layout_marginStart="15dp" />
+
+    <TextView
+        android:id="@+id/text_genero"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gênero:"
+        app:layout_constraintTop_toBottomOf="@id/image_caixa_musica"
+        android:layout_marginTop="18dp"
+        app:layout_constraintStart_toStartOf="@id/image_caixa_musica"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Rock brasileiro"
+        app:layout_constraintTop_toBottomOf="@id/image_caixa_musica"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintStart_toEndOf="@id/text_genero"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_dificuldade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Dificuldade:"
+        app:layout_constraintTop_toBottomOf="@id/image_caixa_musica"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toStartOf="@id/text_dificuldade_valor"
+        android:layout_marginEnd="2dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"/>
+
+    <TextView
+        android:id="@+id/text_dificuldade_valor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Médio"
+        app:layout_constraintTop_toBottomOf="@id/image_caixa_musica"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="2dp"
+        app:layout_constraintEnd_toEndOf="@id/image_caixa_musica"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_solo"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:text="Solo"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:background="@drawable/vtr_botaologin_login"
+        app:layout_constraintTop_toBottomOf="@id/text_genero"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="@id/image_caixa_musica"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_ranked"
+        android:layout_width="149dp"
+        android:layout_height="30dp"
+        android:text="Ranked"
+        android:backgroundTint="@color/gray_blue"
+        android:textColor="@color/white"
+        android:textAllCaps="false"
+        android:background="@drawable/vtr_botaologin_login"
+        app:layout_constraintTop_toBottomOf="@id/text_genero"
+        android:layout_marginTop="20dp"
+        app:layout_constraintEnd_toEndOf="@id/image_caixa_musica"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_tocar"
+        android:layout_width="0dp"
+        android:backgroundTint="@color/light_blue"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/vtr_botaotocar_musics"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_icon_musica"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_tocar_musics"
+        android:elevation="15dp"
+        app:layout_constraintStart_toStartOf="@id/button_tocar"
+        app:layout_constraintTop_toTopOf="@id/button_tocar"
+        app:layout_constraintBottom_toBottomOf="@id/button_tocar"
+        android:layout_marginStart="121dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tocar"
+        android:textSize="26sp"
+        android:textColor="@color/white"
+        android:elevation="15dp"
+        app:layout_constraintStart_toEndOf="@id/image_icon_musica"
+        app:layout_constraintTop_toTopOf="@id/button_tocar"
+        app:layout_constraintBottom_toBottomOf="@id/button_tocar"
+        android:layout_marginStart="8dp"/>
+
+    <ViewSwitcher
+        android:id="@+id/switch_unico"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/button_solo"
+        app:layout_constraintBottom_toTopOf="@id/button_tocar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="25dp"
+        android:layout_marginBottom="10dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <View
+                android:id="@+id/minhaView"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:background="@drawable/vtr_caixa_acordes_dois_musics"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/minhaView2"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="4dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/vtr_caixa_acordes_musics"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                app:layout_constraintBottom_toBottomOf="@id/minhaView2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/minhaView2"
+                app:layout_constraintVertical_bias="1.0">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/acordes" />
+            </ScrollView>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/view_caixa_posicao"
+                android:layout_width="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_height="120dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <TextView
+                android:id="@+id/text_posicao"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Você está na 8° posição com 760 pontos!"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                android:layout_marginTop="16dp"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+
+            <TextView
+                android:layout_width="347dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Toque mais vezes para subir ou manter sua colocação esse mês. Sua pontuação máxima nessa musica foi de 850 pontos, há 31 dias."
+                app:layout_constraintTop_toBottomOf="@id/text_posicao"
+                app:layout_constraintStart_toStartOf="@id/text_posicao"
+                android:textColor="@color/white"/>
+
+            <View
+                android:id="@+id/minhaView_ranked"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginTop="6dp"
+                android:background="@drawable/vtr_caixa_acordes_dois_musics"
+                app:layout_constraintTop_toBottomOf="@id/view_caixa_posicao"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent" />
+
+            <View
+                android:id="@+id/minhaView2_ranked"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_marginBottom="4dp"
+                android:background="@drawable/vtr_caixa_acordes_musics"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@id/minhaView_ranked" />
+
+            <ScrollView
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginBottom="2dp"
+                app:layout_constraintTop_toTopOf="@id/minhaView2_ranked"
+                app:layout_constraintBottom_toBottomOf="@id/minhaView2_ranked">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_primeiro_lugar_musics"
+                            android:layout_marginStart="21dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="21dp"
+                            android:src="@drawable/ic_segundo_lugar_musics" />
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:text="chordsss"
+                            android:textColor="@color/white"
+                            android:textSize="16sp" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:src="@drawable/ic_terceiro_lugar_musics"
+                            android:layout_marginStart="21dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="12dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="4"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="5"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="6"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="7"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="5dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:text="8"
+                            android:textSize="18sp"
+                            android:textColor="@color/white"
+                            android:layout_marginStart="27dp"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_foto_pessoa_musics"
+                            android:layout_marginStart="15dp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="chordsss"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="16dp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="1000xp"
+                            android:textColor="@color/white"
+                            android:textSize="16sp"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="163dp"/>
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </ScrollView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ViewSwitcher>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

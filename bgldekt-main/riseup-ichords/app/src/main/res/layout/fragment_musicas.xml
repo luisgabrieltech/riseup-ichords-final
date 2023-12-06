@@ -1,0 +1,622 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_height="match_parent"
+    tools:context=".MusicasFragment"
+    android:background="@color/dark_blue">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="@color/dark_blue"
+        android:layout_height="match_parent">
+
+        <View
+            android:id="@+id/view_caixa_topbar"
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:background="@drawable/bg_topbar"/>
+
+        <ImageView
+            android:id="@+id/image_logo"
+            android:layout_width="132dp"
+            android:layout_height="30dp"
+            android:src="@drawable/img_logo_ichords"
+            app:layout_constraintTop_toTopOf="@id/view_caixa_topbar"
+            app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="16dp"/>
+
+        <ImageView
+            android:id="@+id/image_lupa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_lupa_musicas_fragment"
+            app:layout_constraintTop_toTopOf="@id/view_caixa_topbar"
+            app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="16dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_favoritos_pratica"
+            app:layout_constraintTop_toTopOf="@id/view_caixa_topbar"
+            app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+            app:layout_constraintEnd_toStartOf="@id/image_lupa"
+            android:layout_marginEnd="24dp"/>
+
+        <ScrollView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginTop="20dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <View
+                    android:id="@+id/caixa_main"
+                    android:layout_width="347dp"
+                    android:layout_height="176dp"
+                    android:background="@drawable/vtr_caixa_main_pratica"
+                    app:layout_constraintTop_toTopOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+                <TextView
+                    android:id="@+id/text_tocadas_recentemente"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tocadas recentemente"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintTop_toBottomOf="@id/caixa_main"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="@id/caixa_main"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_tocadas_recentemente"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:scrollbars="none"
+                    android:layout_marginEnd="16dp"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintTop_toBottomOf="@id/text_tocadas_recentemente"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_charlie"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="211dp"
+                                android:layout_height="93dp"
+                                android:background="@drawable/vtr_caixaedit_login"/>
+
+                            <ImageView
+                                android:id="@+id/image_charlie"
+                                android:layout_width="93dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_height="93dp"
+                                android:src="@drawable/charlie"/>
+
+                            <TextView
+                                android:id="@+id/text_charlie"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Charlie brown Jr"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_charlie"
+                                app:layout_constraintStart_toEndOf="@id/image_charlie"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Vem ser minha"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toTopOf="@id/text_charlie"
+                                app:layout_constraintStart_toStartOf="@id/text_charlie"
+                                android:layout_marginBottom="5dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_seu_jorge"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="211dp"
+                                android:layout_height="93dp"
+                                android:background="@drawable/vtr_caixaedit_login"/>
+
+                            <ImageView
+                                android:id="@+id/image_seu_jorge"
+                                android:layout_width="93dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_height="93dp"
+                                android:src="@drawable/image_seu_jorge"/>
+
+                            <TextView
+                                android:id="@+id/text_seu_jorge"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Seu Jorge"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:layout_constraintBottom_toBottomOf="@id/image_seu_jorge"
+                                app:layout_constraintStart_toEndOf="@id/image_seu_jorge"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Tive Razão"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toTopOf="@id/text_seu_jorge"
+                                app:layout_constraintStart_toStartOf="@id/text_seu_jorge"
+                                android:layout_marginBottom="5dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_adoniran_barbosa"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="211dp"
+                                android:layout_height="93dp"
+                                android:background="@drawable/vtr_caixaedit_login"/>
+
+                            <ImageView
+                                android:id="@+id/image_adoniran_barbosa"
+                                android:layout_width="93dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_height="93dp"
+                                android:src="@drawable/image_adoniran_barbosa"/>
+
+                            <TextView
+                                android:id="@+id/text_adoniran_barbosa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Adoniran Barbosa"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:layout_constraintBottom_toBottomOf="@id/image_adoniran_barbosa"
+                                app:layout_constraintStart_toEndOf="@id/image_adoniran_barbosa"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="53dp"
+                                android:layout_height="wrap_content"
+                                android:text="Abrigo De Vagabundo"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toTopOf="@id/text_adoniran_barbosa"
+                                app:layout_constraintStart_toStartOf="@id/text_adoniran_barbosa"
+                                android:layout_marginBottom="5dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_seu_pereira"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="211dp"
+                                android:layout_height="93dp"
+                                android:background="@drawable/vtr_caixaedit_login"/>
+
+                            <ImageView
+                                android:id="@+id/image_seu_pereira"
+                                android:layout_width="93dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_height="93dp"
+                                android:src="@drawable/image_seu_pereira_e_coletivo"/>
+
+                            <TextView
+                                android:id="@+id/text_seu_pereira"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Seu pereira e colet..."
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_seu_pereira"
+                                app:layout_constraintStart_toEndOf="@id/image_seu_pereira"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Um Nome a Zelar"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toTopOf="@id/text_seu_pereira"
+                                app:layout_constraintStart_toStartOf="@id/text_seu_pereira"
+                                android:layout_marginBottom="5dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_manu_chao"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="17dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                android:layout_width="211dp"
+                                android:layout_height="93dp"
+                                android:background="@drawable/vtr_caixaedit_login"/>
+
+                            <ImageView
+                                android:id="@+id/image_manu_chao"
+                                android:layout_width="93dp"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="15dp"
+                                android:layout_height="93dp"
+                                android:src="@drawable/image_manu_chao"/>
+
+                            <TextView
+                                android:id="@+id/text_manu_chao"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Manu Chao"
+                                android:textColor="@color/white"
+                                android:textSize="10sp"
+                                app:layout_constraintBottom_toBottomOf="@id/image_manu_chao"
+                                app:layout_constraintStart_toEndOf="@id/image_manu_chao"
+                                android:layout_marginStart="12dp"
+                                android:layout_marginBottom="12dp"/>
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Me Gustas Tu"
+                                android:textColor="@color/white"
+                                android:textSize="13sp"
+                                app:layout_constraintBottom_toTopOf="@id/text_manu_chao"
+                                app:layout_constraintStart_toStartOf="@id/text_manu_chao"
+                                android:layout_marginBottom="5dp"/>
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+                <TextView
+                    android:id="@+id/text_em_alta"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Em alta"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintTop_toBottomOf="@id/scroll_tocadas_recentemente"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="@id/caixa_main"/>
+
+                <Button
+                    android:id="@+id/button_ver_tudo"
+                    app:layout_constraintTop_toTopOf="@id/text_em_alta"
+                    app:layout_constraintBottom_toBottomOf="@id/text_em_alta"
+                    app:layout_constraintEnd_toEndOf="@id/caixa_main"
+                    android:backgroundTint="#0049BF"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver tudo"
+                    android:elevation="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="@id/button_ver_tudo"
+                    app:layout_constraintEnd_toEndOf="@id/button_ver_tudo"
+                    app:layout_constraintTop_toTopOf="@id/button_ver_tudo"
+                    app:layout_constraintBottom_toBottomOf="@id/button_ver_tudo"/>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/recyclerView_musicas"
+                    android:scrollbars="none"
+                    android:layout_width="0dp"
+                    android:layout_marginEnd="16dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button_ver_tudo"
+                    android:layout_marginTop="20dp"/>
+
+                <TextView
+                    android:id="@+id/text_grandes_sucessos"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Grandes Sucessos"
+                    android:textColor="@color/white"
+                    android:textSize="26sp"
+                    app:layout_constraintTop_toBottomOf="@id/recyclerView_musicas"
+                    android:layout_marginTop="20dp"
+                    app:layout_constraintStart_toStartOf="@id/caixa_main"/>
+
+                <Button
+                    android:id="@+id/button_ver_tudo_grandes_sucessos"
+                    app:layout_constraintTop_toTopOf="@id/text_grandes_sucessos"
+                    app:layout_constraintBottom_toBottomOf="@id/text_grandes_sucessos"
+                    app:layout_constraintEnd_toEndOf="@id/caixa_main"
+                    android:backgroundTint="#0049BF"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Ver tudo"
+                    android:elevation="15dp"
+                    android:textSize="12sp"
+                    android:textColor="@color/white"
+                    app:layout_constraintStart_toStartOf="@id/button_ver_tudo_grandes_sucessos"
+                    app:layout_constraintEnd_toEndOf="@id/button_ver_tudo_grandes_sucessos"
+                    app:layout_constraintTop_toTopOf="@id/button_ver_tudo_grandes_sucessos"
+                    app:layout_constraintBottom_toBottomOf="@id/button_ver_tudo_grandes_sucessos"/>
+
+                <HorizontalScrollView
+                    android:id="@+id/scroll_grandes_sucessos"
+                    android:scrollbars="none"
+                    android:layout_marginEnd="16dp"
+                    android:layout_width="0dp"
+                    android:paddingBottom="16dp"
+                    android:layout_height="wrap_content"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toBottomOf="@id/button_ver_tudo_grandes_sucessos"
+                    android:layout_marginTop="20dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="horizontal">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_ate_quatro_acordes"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/vtr_caixaedit_login"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="16dp"/>
+
+                            <TextView
+                                android:id="@+id/text_quantidade_ate_quatro_acordes"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="8 musicas"
+                                android:textColor="@color/light_blue"
+                                app:layout_constraintStart_toStartOf="@id/view_ate_quatro_acordes"
+                                android:layout_marginStart="15dp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_ate_quatro_acordes"
+                                android:layout_marginBottom="15dp"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Até 4 acordes"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                app:layout_constraintStart_toStartOf="@id/text_quantidade_ate_quatro_acordes"
+                                app:layout_constraintBottom_toTopOf="@id/text_quantidade_ate_quatro_acordes"
+                                android:layout_marginBottom="5dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_brega_raiz"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/vtr_caixaedit_login"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="16dp"/>
+
+                            <TextView
+                                android:id="@+id/text_quantidade_brega_raiz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="7 musicas"
+                                android:textColor="@color/light_blue"
+                                app:layout_constraintStart_toStartOf="@id/view_brega_raiz"
+                                android:layout_marginStart="15dp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_brega_raiz"
+                                android:layout_marginBottom="15dp"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Brega raiz"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                app:layout_constraintStart_toStartOf="@id/text_quantidade_brega_raiz"
+                                app:layout_constraintBottom_toTopOf="@id/text_quantidade_brega_raiz"
+                                android:layout_marginBottom="5dp"/>
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_pagode_anos_noventa"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/vtr_caixaedit_login"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="16dp"/>
+
+                            <TextView
+                                android:id="@+id/text_quantidade_pagode_anos_noventa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="17 musicas"
+                                android:textColor="@color/light_blue"
+                                app:layout_constraintStart_toStartOf="@id/view_pagode_anos_noventa"
+                                android:layout_marginStart="15dp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_pagode_anos_noventa"
+                                android:layout_marginBottom="15dp"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Rock Brasileiro"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                app:layout_constraintStart_toStartOf="@id/text_quantidade_pagode_anos_noventa"
+                                app:layout_constraintBottom_toTopOf="@id/text_quantidade_pagode_anos_noventa"
+                                android:layout_marginBottom="5dp"/>
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_forro_raiz"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/vtr_caixaedit_login"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="16dp"/>
+
+                            <TextView
+                                android:id="@+id/text_quantidade_forro_raiz"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="10 musicas"
+                                android:textColor="@color/light_blue"
+                                app:layout_constraintStart_toStartOf="@id/view_forro_raiz"
+                                android:layout_marginStart="15dp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_forro_raiz"
+                                android:layout_marginBottom="15dp"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Forró Raiz"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                app:layout_constraintStart_toStartOf="@id/text_quantidade_forro_raiz"
+                                app:layout_constraintBottom_toTopOf="@id/text_quantidade_forro_raiz"
+                                android:layout_marginBottom="5dp"/>
+
+
+
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent">
+
+                            <View
+                                android:id="@+id/view_anos_noventa"
+                                android:layout_width="130dp"
+                                android:layout_height="130dp"
+                                android:background="@drawable/vtr_caixaedit_login"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent"
+                                android:layout_marginStart="16dp"/>
+
+                            <TextView
+                                android:id="@+id/text_quantidade_anos_noventa"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="12 musicas"
+                                android:textColor="@color/light_blue"
+                                app:layout_constraintStart_toStartOf="@id/view_anos_noventa"
+                                android:layout_marginStart="15dp"
+                                app:layout_constraintBottom_toBottomOf="@id/view_anos_noventa"
+                                android:layout_marginBottom="15dp"/>
+
+                            <TextView
+                                android:layout_width="100dp"
+                                android:layout_height="wrap_content"
+                                android:text="Sertanejo"
+                                android:textColor="@color/white"
+                                android:textSize="22sp"
+                                app:layout_constraintStart_toStartOf="@id/text_quantidade_anos_noventa"
+                                app:layout_constraintBottom_toTopOf="@id/text_quantidade_anos_noventa"
+                                android:layout_marginBottom="5dp"/>
+
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+                    </LinearLayout>
+                </HorizontalScrollView>
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </ScrollView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</FrameLayout>

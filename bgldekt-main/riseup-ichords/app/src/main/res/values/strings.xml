@@ -1,0 +1,41 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <string name="app_name">RiseUpiChordsProject</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="menu_bottom_bar_home">Home</string>
+    <string name="menu_bottom_bar_desafios">Desafios</string>
+    <string name="menu_bottom_bar_musicas">Musicas</string>
+    <string name="menu_bottom_bar_mais">Mais</string>
+    <string name="txt_3_3_desafios">3/3</string>
+    <string name="pratique_com_2_cordas">Pratique com 2 cordas</string>
+    <string name="txt_1_2_desafios" tools:ignore="TypographyFractions">1/2</string>
+    <string name="complete_um_nivel_desafios">Complete um nivel</string>
+    <string name="txt_0_2_desafios">0/2</string>
+    <string name="consiga_5_estrelas_na_pratica_desafios">Consiga 5 estrelas na pratica</string>
+    <string name="desafios_do_dia_desafios">Desafios do dia</string>
+    <string name="txt_6_30_desafios">6/30</string>
+    <string name="txt_principal_desafios">Complete 30 desafios no mês de novembro para ganhar pontos no ranking e um emblema especial!</string>
+    <string name="novembro_desafios">Novembro</string>
+    <string name="button_conquistas_desafios">Conquistas</string>
+    <string name="button_desafios_desafios">Desafios</string>
+    <string name="vetorestrela_acess_desafios">vetorEstrela</string>
+    <string name="vetordesafioconcluido_desafios">vetorDesafioConcluido</string>
+    <string name="vetorcdmusica_acess_desafios">vetorCdMusica_acess_desafios</string>
+    <string name="nivel_1">Nível 1</string>
+    <string name="basico">Básico</string>
+    <string name="comecando">Começando</string>
+    <string name="iv">/4</string>
+    <string name="prox_passos">Próximos Passos</string>
+    <string name="v">/5</string>
+    <string name="intro_riffs">Introdução a Riffs</string>
+    <string name="riffs">Riffs</string>
+    <string name="intro_melo">Introdução a Melodia</string>
+    <string name="melo">Melodia</string>
+    <string name="intro_acord">Introdução a Acordes</string>
+    <string name="acord">Acordes</string>
+    <string name="melo_2">Melodia 2</string>
+    <string name="acord_2">Acordes 2</string>
+    <string name="tom_ritm">Tom e Ritmo </string>
+    <string name="conh">Conhecimento</string>
+    <string name="velocidade">0.75x</string>
+</resources>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dark_blue"
+    android:layout_height="match_parent"
+    tools:context=".GeramentoTrilhaActivity">
+
+    <ImageView
+        android:id="@+id/image_logo"
+        android:layout_width="325dp"
+        android:layout_height="64dp"
+        android:layout_marginTop="100dp"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:id="@+id/view_crie_sua_conta"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/image_logo"
+        app:layout_constraintEnd_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toBottomOf="@id/image_logo"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/vtr_caixaedit_login"/>
+
+    <View
+        android:id="@+id/view_escolha_as_preferencias"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/image_logo"
+        app:layout_constraintEnd_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toBottomOf="@id/view_crie_sua_conta"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vtr_caixaedit_login"/>
+
+    <View
+        android:id="@+id/view_selecione_o_seu_nivel"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/image_logo"
+        app:layout_constraintEnd_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toBottomOf="@id/view_escolha_as_preferencias"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vtr_caixaedit_login"/>
+
+    <View
+        android:id="@+id/view_preparando_a_sua_jornada_musical"
+        android:layout_width="0dp"
+        android:layout_height="87dp"
+        app:layout_constraintStart_toStartOf="@id/image_logo"
+        app:layout_constraintEnd_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toBottomOf="@id/view_selecione_o_seu_nivel"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vtr_botaotocar_musics"/>
+
+    <View
+        android:id="@+id/view_afine_as_suas_cordas_para_tocar"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        app:layout_constraintStart_toStartOf="@id/image_logo"
+        app:layout_constraintEnd_toEndOf="@id/image_logo"
+        app:layout_constraintTop_toBottomOf="@id/view_preparando_a_sua_jornada_musical"
+        android:layout_marginTop="30dp"
+        android:background="@drawable/vtr_caixaedit_login"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintTop_toTopOf="@id/view_crie_sua_conta"
+        app:layout_constraintBottom_toBottomOf="@id/view_crie_sua_conta"
+        app:layout_constraintStart_toStartOf="@id/view_crie_sua_conta"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintTop_toTopOf="@id/view_escolha_as_preferencias"
+        app:layout_constraintBottom_toBottomOf="@id/view_escolha_as_preferencias"
+        app:layout_constraintStart_toStartOf="@id/view_escolha_as_preferencias"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintTop_toTopOf="@id/view_selecione_o_seu_nivel"
+        app:layout_constraintBottom_toBottomOf="@id/view_selecione_o_seu_nivel"
+        app:layout_constraintStart_toStartOf="@id/view_selecione_o_seu_nivel"
+        android:layout_marginStart="10dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_check_confirmation_gray_tratamento"
+        app:layout_constraintTop_toTopOf="@id/view_afine_as_suas_cordas_para_tocar"
+        app:layout_constraintBottom_toBottomOf="@id/view_afine_as_suas_cordas_para_tocar"
+        app:layout_constraintStart_toStartOf="@id/view_afine_as_suas_cordas_para_tocar"
+        android:layout_marginStart="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Crie uma conta"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/view_crie_sua_conta"
+        app:layout_constraintBottom_toBottomOf="@id/view_crie_sua_conta"
+        app:layout_constraintStart_toStartOf="@id/view_crie_sua_conta"
+        android:layout_marginStart="56dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Escolha as preferências"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/view_escolha_as_preferencias"
+        app:layout_constraintBottom_toBottomOf="@id/view_escolha_as_preferencias"
+        app:layout_constraintStart_toStartOf="@id/view_escolha_as_preferencias"
+        android:layout_marginStart="56dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Selecione o seu nível"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/view_selecione_o_seu_nivel"
+        app:layout_constraintBottom_toBottomOf="@id/view_selecione_o_seu_nivel"
+        app:layout_constraintStart_toStartOf="@id/view_selecione_o_seu_nivel"
+        android:layout_marginStart="56dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afine as suas cordas para tocar!"
+        android:textColor="@color/gray"
+        android:textSize="18sp"
+        app:layout_constraintTop_toTopOf="@id/view_afine_as_suas_cordas_para_tocar"
+        app:layout_constraintBottom_toBottomOf="@id/view_afine_as_suas_cordas_para_tocar"
+        app:layout_constraintStart_toStartOf="@id/view_afine_as_suas_cordas_para_tocar"
+        android:layout_marginStart="52dp"/>
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/imageViewGif"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:src="@drawable/gif_loadingichords2"
+        app:layout_constraintStart_toStartOf="@id/view_preparando_a_sua_jornada_musical"
+        app:layout_constraintTop_toTopOf="@id/view_preparando_a_sua_jornada_musical"
+        app:layout_constraintBottom_toBottomOf="@id/view_preparando_a_sua_jornada_musical"
+        android:layout_marginStart="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Preparando sua"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintTop_toTopOf="@id/view_preparando_a_sua_jornada_musical"
+        app:layout_constraintStart_toStartOf="@id/view_preparando_a_sua_jornada_musical"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="jornada musical"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toBottomOf="@id/view_preparando_a_sua_jornada_musical"
+        app:layout_constraintStart_toStartOf="@id/view_preparando_a_sua_jornada_musical"
+        android:layout_marginBottom="16dp"
+        android:layout_marginStart="91dp"
+        android:layout_marginTop="16dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

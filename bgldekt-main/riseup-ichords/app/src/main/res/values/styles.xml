@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="novembro_desafios">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt_Desafios_Desafios">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="progressBar5_Desafios">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#212C39</item>
+    </style>
+
+    <style name="txt_Desafios_DesafiosDoDia">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="progressBar1_Card2_Desafios">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt2_ProgressBar1_Card2_Desafios">
+        <item name="android:textSize">15sp</item>
+        <item name="android:textColor">#42525E</item>
+    </style>
+
+    <style name="mainTxt_Mais">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt_card_MAIS">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="selecione_u">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txtTittle_Mais">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt_arroba_Mais">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt_card2_mais">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txt_adicionaramigos_mais">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="txtTittle2_Mais">
+        <item name="android:textSize">26sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="card1V_estatistica_Mais">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="card1_estatistica_mais">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="card2V_estatistica_mais">
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="botao_conquistas_mais">
+        <item name="android:textSize">12sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="card1_conquistas_mais">
+        <item name="android:textSize">13sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="card1_conquistasSub_mais">
+        <item name="android:textSize">10sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="CustomProgressBar" parent="android:Widget.ProgressBar.Horizontal">
+        <!-- Personalize as propriedades da barra de progresso -->
+        <item name="android:progressDrawable">@drawable/vtr_customprogressbar_home</item>
+        <!-- Outras propriedades que deseja modificar -->
+    </style>
+
+    <style name="login">
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="primeiro_lu">
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+    <style name="conquistou_">
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#F4F4F4</item>
+    </style>
+
+</resources>

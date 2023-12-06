@@ -1,0 +1,546 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_desafioss"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".DesafiosFragment"
+    android:background="@color/dark_blue">
+
+    <ViewSwitcher
+        android:id="@+id/view_switcher_main"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="1dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <View
+                android:id="@+id/view_main"
+                android:layout_width="0dp"
+                android:layout_height="310dp"
+                android:background="@drawable/vtr_caixaedit_login"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <TextView
+                android:id="@+id/text_novembro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="Novembro"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/text_complete"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:text="Complete 30 desafios no mês de novembro para ganhar pontos no ranking e um emblema especial!"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                app:layout_constraintTop_toBottomOf="@id/text_novembro"
+                app:layout_constraintStart_toStartOf="@id/text_novembro"
+                android:layout_marginTop="20dp"/>
+
+            <ImageView
+                android:id="@+id/image_cilindro"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar1_desafios"
+                app:layout_constraintTop_toBottomOf="@id/text_complete"
+                android:layout_marginTop="40dp"
+                app:layout_constraintStart_toStartOf="@id/text_novembro"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="12dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar2_desafios"
+                app:layout_constraintStart_toStartOf="@id/image_cilindro"
+                app:layout_constraintTop_toTopOf="@id/image_cilindro"/>
+
+            <ImageView
+                android:id="@+id/image_fundo_gray"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar3_desafios"
+                android:layout_marginTop="-10dp"
+                app:layout_constraintTop_toTopOf="@id/image_cilindro"
+                app:layout_constraintEnd_toEndOf="@id/image_cilindro"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar4_desafios"
+                app:layout_constraintTop_toTopOf="@id/image_fundo_gray"
+                app:layout_constraintBottom_toBottomOf="@id/image_fundo_gray"
+                app:layout_constraintStart_toStartOf="@id/image_fundo_gray"
+                app:layout_constraintEnd_toEndOf="@id/image_fundo_gray"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="6/30"
+                android:textColor="@color/gray_blue"
+                app:layout_constraintStart_toStartOf="@id/image_cilindro"
+                app:layout_constraintEnd_toEndOf="@id/image_cilindro"
+                app:layout_constraintTop_toTopOf="@id/image_cilindro"
+                app:layout_constraintBottom_toBottomOf="@id/image_cilindro"/>
+
+            <TextView
+                android:id="@+id/text_desafios_do_dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Desafios do dia"
+                app:layout_constraintStart_toStartOf="@id/text_novembro"
+                app:layout_constraintTop_toBottomOf="@id/view_main"
+                android:textColor="@color/white"
+                android:layout_marginTop="20dp"
+                android:textSize="26sp"/>
+
+            <View
+                android:id="@+id/view_desafios_do_dia"
+                android:layout_width="0dp"
+                android:layout_height="219dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                app:layout_constraintTop_toBottomOf="@id/text_desafios_do_dia"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:id="@+id/image_estrela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_estrela_desafios"
+                app:layout_constraintStart_toStartOf="@id/view_desafios_do_dia"
+                app:layout_constraintTop_toTopOf="@id/view_desafios_do_dia"
+                android:layout_marginTop="30dp"
+                android:layout_marginStart="16dp"/>
+
+            <ImageView
+                android:id="@+id/image_complete_um_nivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_tarefaconcluida_desafios"
+                app:layout_constraintStart_toStartOf="@id/image_estrela"
+                app:layout_constraintTop_toBottomOf="@id/image_estrela"
+                android:layout_marginTop="30dp"/>
+
+            <ImageView
+                android:id="@+id/image_pratique_com_duas_cordas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_musica_desafios"
+                app:layout_constraintStart_toStartOf="@id/image_estrela"
+                app:layout_constraintTop_toBottomOf="@id/image_complete_um_nivel"
+                android:layout_marginTop="30dp"/>
+
+            <TextView
+                android:id="@+id/text_consiga_5_estrelas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Consiga 5 estrelas na prática"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/image_estrela"
+                app:layout_constraintStart_toEndOf="@id/image_estrela"
+                android:layout_marginStart="11dp"/>
+
+            <ImageView
+                android:id="@+id/image_cilindro_estrela"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar1_card2_desafios"
+                app:layout_constraintStart_toStartOf="@id/text_consiga_5_estrelas"
+                app:layout_constraintTop_toBottomOf="@id/text_consiga_5_estrelas"
+                android:layout_marginTop="9dp"/>
+
+            <TextView
+                android:id="@+id/text_complete_um_nivel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Complete um nível"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/image_complete_um_nivel"
+                app:layout_constraintStart_toEndOf="@id/image_complete_um_nivel"
+                android:layout_marginStart="11dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/image_cilindro_complete_um_nivel"
+                android:src="@drawable/progressbar1_card2_desafios"
+                app:layout_constraintStart_toStartOf="@id/text_complete_um_nivel"
+                app:layout_constraintTop_toBottomOf="@id/text_complete_um_nivel"
+                android:layout_marginTop="9dp"/>
+
+            <TextView
+                android:id="@+id/text_pratique_com_duas_cordas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pratique 3 musicas"
+                android:textColor="@color/white"
+                android:textSize="16sp"
+                app:layout_constraintTop_toTopOf="@id/image_pratique_com_duas_cordas"
+                app:layout_constraintStart_toEndOf="@id/image_pratique_com_duas_cordas"
+                android:layout_marginStart="11dp"/>
+
+            <ImageView
+                android:id="@+id/image_cilindro_pratique_com_duas_cordas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/progressbar4_card2_desafios"
+                app:layout_constraintStart_toStartOf="@id/text_pratique_com_duas_cordas"
+                app:layout_constraintTop_toBottomOf="@id/text_pratique_com_duas_cordas"
+                android:layout_marginTop="9dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/2"
+                android:textSize="16sp"
+                android:textColor="#42525E"
+                app:layout_constraintTop_toTopOf="@id/text_consiga_5_estrelas"
+                app:layout_constraintEnd_toEndOf="@id/image_cilindro_estrela"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="0/2"
+                android:textSize="16sp"
+                android:textColor="#42525E"
+                app:layout_constraintTop_toTopOf="@id/text_complete_um_nivel"
+                app:layout_constraintEnd_toEndOf="@id/image_cilindro_complete_um_nivel"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="3/3"
+                android:textSize="16sp"
+                android:textColor="#42525E"
+                app:layout_constraintTop_toTopOf="@id/text_pratique_com_duas_cordas"
+                app:layout_constraintEnd_toEndOf="@id/image_cilindro_pratique_com_duas_cordas"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/text_conquistas"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="80dp"
+                android:text="Conquistas"
+                android:textColor="@color/white"
+                android:textSize="26sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <View
+                android:id="@+id/view_conquista_um"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_constraintTop_toBottomOf="@id/text_conquistas"
+                android:layout_marginTop="20dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_um"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_um"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_um"
+                android:src="@drawable/img_card1conquistas_mais"/>
+
+            <TextView
+                android:id="@+id/primeiro_lu"
+                android:layout_width="222dp"
+                android:layout_height="25dp"
+                android:text="Primeiro lugar"
+                style="@style/primeiro_lu"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_um"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_um"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_um"
+                android:layout_marginStart="109dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/conquistou_"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/conquistou_"
+                android:text="Conquistou 1º posição em uma musica hankeada"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_um"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_um"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_um"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:id="@+id/view_conquista_dois"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_constraintTop_toBottomOf="@id/view_conquista_um"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_dois"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_dois"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_dois"
+                android:src="@drawable/img_card2conquistas_mais"
+                android:elevation="15dp"/>
+
+            <TextView
+                android:id="@+id/saiu_na_fot"
+                android:layout_width="222dp"
+                android:layout_height="25dp"
+                android:text="Saiu na foto"
+                style="@style/primeiro_lu"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_dois"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_dois"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_dois"
+                android:layout_marginStart="109dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/subtxtcardview2"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/conquistou_"
+                android:text="Primeiro pódio nas musicas rankeadas"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_dois"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_dois"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_dois"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:id="@+id/view_conquista_tres"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_constraintTop_toBottomOf="@id/view_conquista_dois"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_tres"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_tres"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_tres"
+                android:src="@drawable/img_card3_mais"
+                android:elevation="15dp"/>
+
+            <TextView
+                android:id="@+id/icansavel"
+                android:layout_width="222dp"
+                android:layout_height="25dp"
+                android:text="Incansável"
+                style="@style/primeiro_lu"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_tres"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_tres"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_tres"
+                android:layout_marginStart="109dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/subtxtcardview3"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/conquistou_"
+                android:text="Praticou 10 dias seguidos"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_tres"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_tres"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_tres"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:id="@+id/view_conquista_quatro"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_constraintTop_toBottomOf="@id/view_conquista_tres"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_quatro"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_quatro"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_quatro"
+                android:src="@drawable/img_card4_mais"
+                android:elevation="15dp"/>
+
+            <TextView
+                android:id="@+id/sociavel"
+                android:layout_width="222dp"
+                android:layout_height="25dp"
+                android:text="Sociável "
+                style="@style/primeiro_lu"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_quatro"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_quatro"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_quatro"
+                android:layout_marginStart="109dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/subtxtcardview4"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/conquistou_"
+                android:text="Adicionou 3 amigos"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_quatro"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_quatro"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_quatro"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="12dp"/>
+
+            <View
+                android:id="@+id/view_conquista_cinco"
+                android:layout_width="0dp"
+                android:layout_height="93dp"
+                app:layout_constraintTop_toBottomOf="@id/view_conquista_quatro"
+                android:layout_marginTop="16dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="16dp"
+                android:background="@drawable/vtr_caixaedit_login"/>
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="93dp"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_cinco"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_cinco"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_cinco"
+                android:src="@drawable/img_card5_mais"
+                android:elevation="15dp"/>
+
+            <TextView
+                android:id="@+id/Iniciante"
+                android:layout_width="222dp"
+                android:layout_height="25dp"
+                android:text="Iniciante"
+                style="@style/primeiro_lu"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_cinco"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_cinco"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_cinco"
+                android:layout_marginStart="109dp"
+                android:layout_marginBottom="52dp"
+                android:layout_marginTop="16dp"/>
+
+            <TextView
+                android:id="@+id/subtxtcardview5"
+                android:layout_width="222dp"
+                android:layout_height="40dp"
+                android:textAppearance="@style/conquistou_"
+                android:text="Adicionou 3 amigos"
+                app:layout_constraintStart_toStartOf="@id/view_conquista_cinco"
+                app:layout_constraintTop_toTopOf="@id/view_conquista_cinco"
+                app:layout_constraintBottom_toBottomOf="@id/view_conquista_cinco"
+                android:layout_marginStart="109dp"
+                android:layout_marginTop="41dp"
+                android:layout_marginBottom="12dp"/>
+
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </ViewSwitcher>
+
+    <View
+        android:id="@+id/view_caixa_topbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        android:elevation="1dp"
+        android:background="@drawable/bg_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_desafios"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:background="@drawable/vtr_botaoconquistas_mais"
+        android:text="Desafios"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toTopOf="@id/view_caixa_topbar"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_conquistas"
+        android:layout_width="160dp"
+        android:layout_height="30dp"
+        android:background="@drawable/vtr_botaoconquistas_mais"
+        android:text="Conquistas"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:backgroundTint="@color/gray_blue"
+        app:layout_constraintTop_toTopOf="@id/view_caixa_topbar"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"/>
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

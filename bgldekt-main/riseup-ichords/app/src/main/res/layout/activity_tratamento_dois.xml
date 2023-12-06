@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/dark_blue"
+    android:layout_height="match_parent"
+    tools:context=".TratamentoDoisActivity">
+
+    <View
+        android:id="@+id/view_caixa_topbar"
+        android:layout_width="0dp"
+        android:layout_height="62dp"
+        android:background="@drawable/bg_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="15dp"
+        android:src="@drawable/ic_button_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="@id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="@id/view_caixa_topbar"
+        app:layout_constraintTop_toTopOf="@+id/view_caixa_topbar" />
+
+
+    <Button
+        android:id="@+id/button_pular"
+        android:layout_width="60dp"
+        android:layout_height="39dp"
+        android:layout_marginEnd="16dp"
+        android:backgroundTint="#42525E"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@id/view_caixa_topbar" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="pular"
+        android:elevation="15dp"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@id/button_pular"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintStart_toStartOf="@id/button_pular"
+        app:layout_constraintTop_toTopOf="@id/button_pular" />
+
+    <TextView
+        android:id="@+id/text_main"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Diga seu nível atual"
+        android:textColor="@color/white"
+        android:textSize="20sp"
+        android:layout_marginTop="25dp"/>
+
+    <View
+        android:id="@+id/view_comecando_"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/text_main"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:id="@+id/view_intermediario_"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/view_comecando_"
+        android:layout_marginTop="16dp"/>
+
+    <View
+        android:id="@+id/view_iniciante_"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintTop_toBottomOf="@id/text_main"
+        android:layout_marginTop="30dp"/>
+
+    <View
+        android:id="@+id/view_avancado_"
+        android:layout_width="163dp"
+        android:layout_height="163dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintTop_toBottomOf="@id/view_iniciante_"
+        android:layout_marginTop="16dp"/>
+
+    <TextView
+        android:id="@+id/text_cinza_comecando_"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:text="Nunca toquei em um violão"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/view_comecando_"
+        app:layout_constraintBottom_toBottomOf="@id/view_comecando_"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Começando"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/text_cinza_comecando_"
+        app:layout_constraintBottom_toTopOf="@id/text_cinza_comecando_"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_cinza_iniciante_"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:text="Eu sei apenas o básico"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/view_iniciante_"
+        app:layout_constraintBottom_toBottomOf="@id/view_iniciante_"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Iniciante"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/text_cinza_iniciante_"
+        app:layout_constraintBottom_toTopOf="@id/text_cinza_iniciante_"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_cinza_intermediario_"
+        android:layout_width="131dp"
+        android:layout_height="32dp"
+        android:text="Consigo tocar algumas músicas"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/view_intermediario_"
+        app:layout_constraintBottom_toBottomOf="@id/view_intermediario_"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intermediário"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/text_cinza_intermediario_"
+        app:layout_constraintBottom_toTopOf="@id/text_cinza_intermediario_"
+        android:layout_marginTop="4dp"/>
+
+    <TextView
+        android:id="@+id/text_cinza_avancado_"
+        android:layout_width="131dp"
+        android:layout_height="wrap_content"
+        android:text="Consigo tocar a maioria das músicas"
+        android:layout_marginStart="16dp"
+        app:layout_constraintStart_toStartOf="@id/view_avancado_"
+        app:layout_constraintBottom_toBottomOf="@id/view_avancado_"
+        android:layout_marginBottom="18dp"
+        android:textColor="@color/gray"
+        android:textSize="14sp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Avançado"
+        android:textSize="22sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/text_cinza_avancado_"
+        app:layout_constraintBottom_toTopOf="@id/text_cinza_avancado_"
+        android:layout_marginTop="4dp"/>
+
+    <ImageView
+        android:id="@+id/image_check_comecando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintEnd_toEndOf="@id/view_comecando_"
+        app:layout_constraintBottom_toBottomOf="@id/view_comecando_"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginEnd="-10dp"/>
+    <ImageView
+        android:id="@+id/image_check_iniciante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintEnd_toEndOf="@id/view_iniciante_"
+        app:layout_constraintBottom_toBottomOf="@id/view_iniciante_"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginEnd="-10dp"/>
+
+    <ImageView
+        android:id="@+id/image_check_intermediario"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintEnd_toEndOf="@id/view_intermediario_"
+        app:layout_constraintBottom_toBottomOf="@id/view_intermediario_"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginEnd="-10dp"/>
+
+    <ImageView
+        android:id="@+id/image_check_avancado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        android:src="@drawable/ic_check_confirmation_tratamento"
+        app:layout_constraintEnd_toEndOf="@id/view_avancado_"
+        app:layout_constraintBottom_toBottomOf="@id/view_avancado_"
+        android:layout_marginBottom="-10dp"
+        android:layout_marginEnd="-10dp"/>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_avancar_"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:layout_marginBottom="32dp"
+        android:background="@drawable/vtr_botaotocar_musics"
+        android:text="Avançar"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@id/button_pular"
+        app:layout_constraintStart_toStartOf="@id/image_voltar" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

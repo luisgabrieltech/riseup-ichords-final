@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_graph"
+    app:startDestination="@id/menu_home">
+
+    <fragment
+        android:id="@+id/menu_home"
+        android:name="com.luisgabriel.riseupichordsproject.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/menu_desafios"
+        android:name="com.luisgabriel.riseupichordsproject.DesafiosFragment"
+        android:label="fragment_desafios"
+        tools:layout="@layout/fragment_desafios" />
+    <fragment
+        android:id="@+id/menu_musicas"
+        android:name="com.luisgabriel.riseupichordsproject.MusicasFragment"
+        android:label="fragment_musicas"
+        tools:layout="@layout/fragment_musicas" />
+    <fragment
+        android:id="@+id/menu_mais"
+        android:name="com.luisgabriel.riseupichordsproject.MaisFragment"
+        android:label="fragment_mais"
+        tools:layout="@layout/fragment_mais" />
+</navigation>

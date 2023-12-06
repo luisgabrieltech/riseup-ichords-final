@@ -1,0 +1,832 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark_blue"
+    tools:context=".HomeFragment">
+
+    <ImageView
+        android:id="@+id/topbar"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/bg_topbar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/rectangleImageView"
+        android:layout_width="60dp"
+        android:layout_height="30dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="47dp"
+        android:src="@drawable/ic_dayscount_home"
+        app:layout_constraintEnd_toStartOf="@+id/logo"
+        app:layout_constraintStart_toStartOf="@+id/topbar"
+        app:layout_constraintTop_toTopOf="@id/topbar" />
+
+    <ImageView
+        android:id="@+id/logo"
+        android:layout_width="132dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="24dp"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/topbar" />
+
+    <ImageButton
+        android:id="@+id/searchButton"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="16dp"
+        android:src="@drawable/ic_lupa_musicas_fragment"
+        app:layout_constraintEnd_toEndOf="@+id/topbar"
+        app:layout_constraintStart_toEndOf="@+id/logo"
+        app:layout_constraintTop_toTopOf="@id/topbar" />
+
+    <TextView
+        android:id="@+id/days"
+        android:layout_width="8dp"
+        android:layout_height="23dp"
+        android:layout_marginStart="37dp"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="14dp"
+        android:text="0"
+        android:textColor="#FFFFFF"
+        android:textSize="19sp"
+        app:layout_constraintEnd_toEndOf="@+id/rectangleImageView"
+        app:layout_constraintStart_toStartOf="@+id/rectangleImageView"
+        app:layout_constraintTop_toTopOf="@+id/rectangleImageView" />
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topbar">
+
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <ImageView
+                android:id="@+id/card1home"
+                android:layout_width="360dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/home_card1"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.736"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/basico" />
+
+            <ImageView
+                android:id="@+id/card2home"
+                android:layout_width="360dp"
+                android:layout_height="189dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/home_card2"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.473"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card1home" />
+
+            <TextView
+                android:id="@+id/Nivel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/nivel_1"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/card2home" />
+
+            <ImageView
+                android:id="@+id/cardlevel1_1"
+                android:layout_width="360dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Nivel1" />
+
+            <ImageView
+                android:id="@+id/cardlevel1_2"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardlevel1_1" />
+
+            <ImageView
+                android:id="@+id/cardlevel1_3"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardlevel1_2" />
+
+            <TextView
+                android:id="@+id/Nivel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="Nível 2"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardlevel1_3" />
+
+            <ImageView
+                android:id="@+id/cardlevel2_1"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/Nivel2" />
+
+            <ImageView
+                android:id="@+id/cardlevel2_2"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="16dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardlevel2_1" />
+
+            <ImageView
+                android:id="@+id/cardlevel2_3"
+                android:layout_width="347dp"
+                android:layout_height="176dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="93dp"
+                android:src="@drawable/vtr_card3_home"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.387"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardlevel2_2" />
+
+
+
+
+            <TextView
+                android:id="@+id/basico"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/basico"
+                android:textColor="@color/white"
+                android:textSize="30sp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/starting"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/comecando"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card1home"
+                app:layout_constraintStart_toStartOf="@+id/card1home"
+                app:layout_constraintTop_toTopOf="@+id/card1home" />
+
+            <TextView
+                android:id="@+id/basicard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/basico"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card1home"
+                app:layout_constraintStart_toStartOf="@+id/card1home"
+                app:layout_constraintTop_toBottomOf="@+id/starting" />
+
+            <TextView
+                android:id="@+id/iv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/iv"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card1home"
+                app:layout_constraintEnd_toEndOf="@+id/card1home"
+                app:layout_constraintTop_toTopOf="@+id/card1home" />
+
+            <TextView
+                android:id="@+id/progresscard1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="4"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card1home"
+                app:layout_constraintEnd_toStartOf="@+id/iv"
+                app:layout_constraintTop_toTopOf="@+id/card1home" />
+
+            <TextView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/prox_passos"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card2home"
+                app:layout_constraintStart_toStartOf="@+id/card2home"
+                app:layout_constraintTop_toTopOf="@+id/card2home" />
+
+            <TextView
+                android:id="@+id/basicard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/basico"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card2home"
+                app:layout_constraintStart_toStartOf="@+id/card2home"
+                app:layout_constraintTop_toBottomOf="@+id/next" />
+
+            <TextView
+                android:id="@+id/v"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/v"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card2home"
+                app:layout_constraintEnd_toEndOf="@+id/card2home"
+                app:layout_constraintTop_toTopOf="@+id/card2home" />
+
+            <TextView
+                android:id="@+id/progresscard2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="3"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/card2home"
+                app:layout_constraintEnd_toStartOf="@+id/v"
+                app:layout_constraintTop_toTopOf="@+id/card2home" />
+
+            <TextView
+                android:id="@+id/introRiffs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/intro_riffs"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_1" />
+
+            <TextView
+                android:id="@+id/riffs"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/riffs"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_1"
+                app:layout_constraintTop_toBottomOf="@+id/introRiffs" />
+
+            <TextView
+                android:id="@+id/vlevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/v"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_1"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_1" />
+
+            <TextView
+                android:id="@+id/progressLevel1_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_1"
+                app:layout_constraintEnd_toStartOf="@+id/vlevel1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_1" />
+
+            <TextView
+                android:id="@+id/introMelo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/intro_melo"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_2"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_2" />
+
+            <TextView
+                android:id="@+id/melo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/melo"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_2"
+                app:layout_constraintTop_toBottomOf="@+id/introMelo" />
+
+            <TextView
+                android:id="@+id/ivlevel1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/iv"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_2"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_2"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_2" />
+
+            <TextView
+                android:id="@+id/progressLevel1_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_2"
+                app:layout_constraintEnd_toStartOf="@+id/ivlevel1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_2" />
+
+            <TextView
+                android:id="@+id/introAcord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/intro_acord"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_3"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_3" />
+
+            <TextView
+                android:id="@+id/acord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/acord"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_3"
+                app:layout_constraintTop_toBottomOf="@+id/introAcord" />
+
+            <TextView
+                android:id="@+id/vii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="/7"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_3"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_3"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_3" />
+
+            <TextView
+                android:id="@+id/progressLevel1_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_3"
+                app:layout_constraintEnd_toStartOf="@+id/vii"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel1_3" />
+
+
+            <TextView
+                android:id="@+id/melo2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/melo_2"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_1" />
+
+            <TextView
+                android:id="@+id/melolevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/melo"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_1"
+                app:layout_constraintTop_toBottomOf="@+id/melo2" />
+
+            <TextView
+                android:id="@+id/vi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="/6"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_1"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_1"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_1" />
+
+            <TextView
+                android:id="@+id/progressLevel2_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_1"
+                app:layout_constraintEnd_toStartOf="@+id/vi"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_1" />
+
+            <TextView
+                android:id="@+id/acord2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/acord_2"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_2"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_2" />
+
+            <TextView
+                android:id="@+id/acordlevel2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/acord"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_2"
+                app:layout_constraintTop_toBottomOf="@+id/acord2" />
+
+            <TextView
+                android:id="@+id/ix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="/9"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_2"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_2"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_2" />
+
+            <TextView
+                android:id="@+id/progressLevel2_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_2"
+                app:layout_constraintEnd_toStartOf="@+id/ix"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_2" />
+
+            <TextView
+                android:id="@+id/tom_ritm"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginTop="94dp"
+                android:layout_marginBottom="57dp"
+                android:text="@string/tom_ritm"
+                android:textColor="@color/white"
+                android:textSize="23sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_3"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_3" />
+
+            <TextView
+                android:id="@+id/conh"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="@string/conh"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_3"
+                app:layout_constraintTop_toBottomOf="@+id/tom_ritm" />
+
+            <TextView
+                android:id="@+id/viii"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginEnd="18dp"
+                android:layout_marginBottom="38dp"
+                android:text="/8"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_3"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_3"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_3" />
+
+            <TextView
+                android:id="@+id/progressLevel2_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="119dp"
+                android:layout_marginBottom="38dp"
+                android:text="0"
+                android:textColor="@color/light_blue"
+                android:textSize="19sp"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_3"
+                app:layout_constraintEnd_toStartOf="@+id/viii"
+                app:layout_constraintTop_toTopOf="@+id/cardlevel2_3" />
+
+            <ProgressBar
+                android:id="@+id/proBarC1"
+                style="@style/CustomProgressBar"
+                android:layout_width="360dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="4dp"
+                android:progress="100"
+                app:layout_constraintBottom_toBottomOf="@+id/card1home"
+                app:layout_constraintEnd_toEndOf="@+id/card1home"
+                app:layout_constraintStart_toStartOf="@+id/card1home" />
+
+            <ProgressBar
+                android:id="@+id/proBarC2"
+                style="@style/CustomProgressBar"
+                android:layout_width="360dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="4dp"
+                android:progress="60"
+                app:layout_constraintBottom_toBottomOf="@+id/card2home"
+                app:layout_constraintEnd_toEndOf="@+id/card2home"
+                app:layout_constraintStart_toStartOf="@+id/card2home" />
+
+            <ProgressBar
+                android:id="@+id/proBarC1_l1"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_1"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_1" />
+
+            <ProgressBar
+                android:id="@+id/proBarC2_l1"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_2"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_2" />
+
+            <ProgressBar
+                android:id="@+id/proBarC3_l1"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel1_3"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel1_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel1_3" />
+
+            <ProgressBar
+                android:id="@+id/proBarC1_l2"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_1"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_1"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_1" />
+
+            <ProgressBar
+                android:id="@+id/proBarC2_l2"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_2"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_2"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_2" />
+
+            <ProgressBar
+                android:id="@+id/proBarC3_l2"
+                style="@style/CustomProgressBar"
+                android:layout_width="347dp"
+                android:layout_height="15dp"
+                android:layout_marginBottom="0dp"
+                android:progress="0"
+                app:layout_constraintBottom_toBottomOf="@+id/cardlevel2_3"
+                app:layout_constraintEnd_toEndOf="@+id/cardlevel2_3"
+                app:layout_constraintStart_toStartOf="@+id/cardlevel2_3" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel1_1"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel1_1"
+                app:layout_constraintTop_toTopOf="@id/cardlevel1_1"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel1_1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel1_2"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel1_2"
+                app:layout_constraintTop_toTopOf="@id/cardlevel1_2"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel1_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel1_3"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel1_3"
+                app:layout_constraintTop_toTopOf="@id/cardlevel1_3"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel1_3"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel2_1"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel2_1"
+                app:layout_constraintTop_toTopOf="@id/cardlevel2_1"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel2_1"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel2_2"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel2_2"
+                app:layout_constraintTop_toTopOf="@id/cardlevel2_2"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel2_2"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/vtr_cadeado_proximos_passos"
+                app:layout_constraintStart_toStartOf="@id/cardlevel2_3"
+                app:layout_constraintEnd_toEndOf="@id/cardlevel2_3"
+                app:layout_constraintTop_toTopOf="@id/cardlevel2_3"
+                app:layout_constraintBottom_toBottomOf="@id/cardlevel2_3"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:background="@drawable/vtr_botaoconquistas_mais"
+                app:layout_constraintTop_toTopOf="@id/Nivel1"
+                app:layout_constraintBottom_toBottomOf="@id/Nivel1"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:text="Pular para cá"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="110dp"
+                android:layout_height="25dp"
+                android:background="@drawable/vtr_botaoconquistas_mais"
+                app:layout_constraintTop_toTopOf="@id/Nivel2"
+                app:layout_constraintBottom_toBottomOf="@id/Nivel2"
+                app:layout_constraintEnd_toEndOf="parent"
+                android:layout_marginEnd="16dp"
+                android:textAllCaps="false"
+                android:text="Pular para cá"
+                android:textColor="@color/white"
+                android:textSize="12sp"/>
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

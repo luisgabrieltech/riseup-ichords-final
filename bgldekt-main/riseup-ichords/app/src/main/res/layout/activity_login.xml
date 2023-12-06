@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@color/dark_blue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <!--TOP BAR LOGIN -->
+    <View
+        android:id="@+id/view_caixa_topbar"
+        android:layout_width="0dp"
+        android:layout_height="60dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/bg_topbar"/>
+
+    <ImageView
+        android:id="@+id/image_voltar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_button_voltar"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="15dp"
+        android:layout_marginStart="16dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/img_logo_ichords"
+        app:layout_constraintTop_toTopOf="@+id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="@id/view_caixa_topbar"
+        app:layout_constraintEnd_toEndOf="@id/view_caixa_topbar"
+        app:layout_constraintBottom_toBottomOf="@id/view_caixa_topbar"/>
+
+    <!-- FIM DA TOPBAR -->
+
+    <!-- INICIO DAS FRASES NA TELA -->
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Login"
+        android:textSize="30sp"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar"
+        android:layout_marginTop="25dp"
+        android:textColor="@color/white"/>
+
+    <TextView
+        android:id="@+id/text_frase"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="É ótimo tê-lo de volta!                         Bem-vindo novamente ao seu espaço             de aprendizado musical"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar"
+        android:layout_marginTop="77dp"
+        android:textSize="20sp"/>
+
+    <!-- FIM DAS FRASES NA TELA -->
+
+    <!-- INÍCIO DAS CAIXAS DE EMAIL/SENHA -->
+
+    <EditText
+        android:id="@+id/edit_email"
+        android:inputType="text"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        android:layout_marginTop="186dp"
+        app:layout_constraintTop_toBottomOf="@id/view_caixa_topbar"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="15dp"
+        />
+    <ImageView
+        android:id="@+id/icon_pessoa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_pessoa_login"
+        app:layout_constraintTop_toTopOf="@id/edit_email"
+        app:layout_constraintBottom_toBottomOf="@id/edit_email"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        android:layout_marginStart="16.5dp"/>
+
+    <TextView
+        android:id="@+id/text_email"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="E-mail ou usuário"
+        android:layout_marginBottom="1dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/icon_pessoa"
+        app:layout_constraintTop_toTopOf="@id/edit_email"
+        app:layout_constraintBottom_toBottomOf="@id/edit_email"
+        android:layout_marginStart="16.5dp"/>
+
+    <EditText
+        android:id="@+id/edit_senha"
+        android:layout_width="0dp"
+        android:textColor="@color/white"
+        android:layout_height="50dp"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/vtr_caixaedit_login"
+        android:inputType="textPassword"
+        app:layout_constraintEnd_toEndOf="@id/edit_email"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@id/image_voltar"
+        app:layout_constraintTop_toBottomOf="@id/edit_email"
+        android:paddingStart="15dp"/>
+
+    <ImageView
+        android:id="@+id/icon_cadeado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_cadeado_login"
+        app:layout_constraintTop_toTopOf="@id/edit_senha"
+        app:layout_constraintBottom_toBottomOf="@id/edit_senha"
+        app:layout_constraintStart_toStartOf="@id/edit_email"
+        android:layout_marginStart="16.5dp"/>
+
+    <TextView
+        android:id="@+id/text_senha"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Senha"
+        android:layout_marginBottom="1dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toEndOf="@id/icon_cadeado"
+        app:layout_constraintTop_toTopOf="@id/edit_senha"
+        app:layout_constraintBottom_toBottomOf="@id/edit_senha"
+        android:layout_marginStart="16.5dp"/>
+
+    <!-- FIM DAS CAIXAS DE EMAIL/SENHA -->
+
+    <!-- O RESTO -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Esqueceu a senha?"
+        android:textColor="@color/white"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="@id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        android:layout_marginTop="16dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button_entrar"
+        android:layout_width="0dp"
+        android:layout_height="48dp"
+        android:text="Entrar"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="@id/edit_senha"
+        app:layout_constraintEnd_toEndOf="@id/edit_senha"
+        app:layout_constraintTop_toBottomOf="@id/edit_senha"
+        android:background="@drawable/vtr_botaologin_login"
+        android:layout_marginTop="50dp"/>
+
+    <ImageView
+        android:id="@+id/image_linha_um"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vtr_linha_login"
+        app:layout_constraintStart_toStartOf="@id/button_entrar"
+        app:layout_constraintTop_toBottomOf="@id/button_entrar"
+        android:layout_marginTop="46dp"/>
+
+    <ImageView
+        android:id="@+id/image_linha_dois"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/vtr_linha_login"
+        app:layout_constraintEnd_toEndOf="@id/button_entrar"
+        app:layout_constraintTop_toBottomOf="@id/button_entrar"
+        android:layout_marginTop="46dp"/>
+
+    <TextView
+        android:id="@+id/text_continue"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ou continue com"
+        android:textColor="@color/gray"
+        android:textSize="16sp"
+        app:layout_constraintTop_toBottomOf="@id/button_entrar"
+        android:layout_marginTop="35dp"
+        app:layout_constraintStart_toEndOf="@id/image_linha_um"
+        app:layout_constraintEnd_toStartOf="@id/image_linha_dois"/>
+
+    <ImageView
+        android:id="@+id/image_facebook"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_facebook_login"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/text_continue"
+        android:layout_marginTop="21dp"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_marginEnd="35dp"
+        android:layout_marginTop="3dp"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_google_login"
+        app:layout_constraintEnd_toStartOf="@id/image_facebook"
+        app:layout_constraintTop_toTopOf="@id/image_facebook"/>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_apple_login"
+        android:layout_marginStart="35dp"
+        android:layout_marginTop="19dp"
+        app:layout_constraintStart_toEndOf="@id/image_facebook"
+        app:layout_constraintTop_toBottomOf="@id/text_continue"
+        />
+
+    <TextView
+        android:id="@+id/text_nao_tem_conta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Não tem uma conta?"
+        android:layout_marginStart="70.4dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginBottom="41.6dp"/>
+
+    <TextView
+        android:id="@+id/text_criar_agora"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:text="Criar agora"
+        android:textColor="@color/light_blue"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/text_nao_tem_conta"
+        app:layout_constraintTop_toTopOf="@id/text_nao_tem_conta" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
