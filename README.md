@@ -1,4 +1,4 @@
-# iChords - *Seja Sua Melhor Versão* / *Chegue ao Topo!*
+# iChords - *Chegue ao Topo!*
 
 ![Logo do iChords](https://imgur.com/a/DBvYMiZ)
 
