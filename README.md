@@ -40,7 +40,7 @@ Receba dicas personalizadas, participe de desafios e acompanhe seu progresso de 
 - Acesso à Internet.
 
 ### Guia de Instalação
-1. Entre no link: [https://bit.ly/ichordsapp](https://bit.ly/ichordsapp)
+1. Entre no link: [https://bit.ly/ichordsapp](https://drive.google.com/drive/folders/1dPu-U5Kt75Pn2ozncDmBCrSCkjwExQp8?usp=sharing)
 2. Entre na pasta iChords APK.
 3. Faça o download do ichords.apk.
 4. Aceite em configurações a instalação de fontes desconhecidas.
